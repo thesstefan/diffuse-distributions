@@ -1,5 +1,5 @@
 [project]
-name = "forcing_diffuse_distributions"
+name = "diffuse_forcing"
 readme = "README.md"
 dynamic = ["dependencies", "optional-dependencies", "version"]
 requires-python = ">=3.11.6"
@@ -12,4 +12,4 @@ build-backend = "setuptools.build_meta"
 dependencies = { file = ["requirements.txt"] }
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["."]
