@@ -8,8 +8,7 @@ from peft import PeftModelForCausalLM
 from tqdm.auto import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from utils import Prompt, find_and_generate_prompts
-
+from diffuse_forcing.utils import Prompt, find_and_generate_prompts
 
 PRECISIONS = {
     "bf16": torch.bfloat16,

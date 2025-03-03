@@ -7,7 +7,7 @@ from einops import rearrange
 from tqdm import trange
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from utils import Prompt, embed_tokens, entropy
+from diffuse_forcing.utils import Prompt, embed_tokens, entropy
 
 
 def compute_loss(

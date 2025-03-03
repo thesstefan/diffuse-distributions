@@ -4,14 +4,14 @@ import sys
 
 import torch
 from omegaconf import OmegaConf
-from peft import LoraConfig, get_peft_model, PeftModelForCausalLM
+from peft import LoraConfig, PeftModelForCausalLM, get_peft_model
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from search import continuous
-from utils import (
+from diffuse_forcing.generate import generate
+from diffuse_forcing.search import continuous
+from diffuse_forcing.utils import (
     find_and_generate_prompts,
 )
-from generate import generate
 
 
 def main():
